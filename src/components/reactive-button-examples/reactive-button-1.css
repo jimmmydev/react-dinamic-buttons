@@ -1,0 +1,12 @@
+.reactive-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}

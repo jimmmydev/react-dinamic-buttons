@@ -1,0 +1,26 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.accordion-section {
+  margin-bottom: 20px;
+}
+
+.accordion-section h2 {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-section h2:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 3px solid #ccc;
+}
