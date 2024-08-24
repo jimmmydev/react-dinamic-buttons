@@ -18,7 +18,7 @@ function ReactiveButton2() {
 
   return (
     <div>
-      <h3>Botones de Colores</h3>
+      <h4>Botones de Colores</h4>
       <ReactiveButton
         color="primary"
         buttonState={statePrimary}
@@ -27,6 +27,7 @@ function ReactiveButton2() {
         successText="Done"
         onClick={() => onClickHandler(setStatePrimary)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         color="secondary"
         buttonState={stateSecondary}
@@ -35,6 +36,7 @@ function ReactiveButton2() {
         successText="Done"
         onClick={() => onClickHandler(setStateSecondary)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         color="green"
         buttonState={stateGreen}
@@ -43,6 +45,7 @@ function ReactiveButton2() {
         successText="Done"
         onClick={() => onClickHandler(setStateGreen)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         color="red"
         buttonState={stateRed}
@@ -51,6 +54,7 @@ function ReactiveButton2() {
         successText="Done"
         onClick={() => onClickHandler(setStateRed)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         color="blue"
         buttonState={stateBlue}
@@ -59,6 +63,7 @@ function ReactiveButton2() {
         successText="Done"
         onClick={() => onClickHandler(setStateBlue)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         color="yellow"
         buttonState={stateYellow}

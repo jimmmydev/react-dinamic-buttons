@@ -16,7 +16,7 @@ function ReactiveButton3() {
 
   return (
     <div>
-      <h3>Botones de Diferentes Tamaños</h3>
+      <h4>Botones de Diferentes Tamaños</h4>
       <ReactiveButton
         size="tiny"
         buttonState={stateTiny}
@@ -25,6 +25,7 @@ function ReactiveButton3() {
         successText="Done"
         onClick={() => onClickHandler(setStateTiny)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         size="small"
         buttonState={stateSmall}
@@ -33,6 +34,7 @@ function ReactiveButton3() {
         successText="Done"
         onClick={() => onClickHandler(setStateSmall)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         size="medium"
         buttonState={stateMedium}
@@ -41,6 +43,7 @@ function ReactiveButton3() {
         successText="Done"
         onClick={() => onClickHandler(setStateMedium)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         size="large"
         buttonState={stateLarge}

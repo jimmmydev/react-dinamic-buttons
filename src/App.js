@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Collapse } from 'react-collapse';
 import './App.css';
 
-// Importamos los ejemplos de ReactiveButton
 import ReactiveButton1 from './components/reactive-button-examples/reactive-button-1';
 import ReactiveButton2 from './components/reactive-button-examples/reactive-button-2';
 import ReactiveButton3 from './components/reactive-button-examples/reactive-button-3';

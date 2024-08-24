@@ -15,7 +15,7 @@ function ReactiveButton4() {
 
   return (
     <div>
-      <h3>Botones con Estilos</h3>
+      <h4>Botones con Estilos</h4>
       <ReactiveButton
         outline
         buttonState={stateOutline}
@@ -24,6 +24,7 @@ function ReactiveButton4() {
         successText="Done"
         onClick={() => onClickHandler(setStateOutline)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         rounded
         buttonState={stateRounded}
@@ -32,6 +33,7 @@ function ReactiveButton4() {
         successText="Done"
         onClick={() => onClickHandler(setStateRounded)}
       />
+      &nbsp;&nbsp;&nbsp;
       <ReactiveButton
         shadow
         buttonState={stateShadow}

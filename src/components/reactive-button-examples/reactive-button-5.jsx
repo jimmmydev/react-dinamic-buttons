@@ -14,7 +14,7 @@ function ReactiveButton5() {
 
   return (
     <div>
-      <h3>Botón con Icono</h3>
+      <h4>Botón con Icono</h4>
       <ReactiveButton
         buttonState={state}
         idleText={

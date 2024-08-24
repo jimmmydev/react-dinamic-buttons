@@ -13,7 +13,7 @@ function ReactiveButton6() {
 
   return (
     <div>
-      <h3>Botón como Enlace</h3>
+      <h4>Botón como Enlace</h4>
       <a href="https://github.com/" target="_blank" rel="noreferrer">
         <ReactiveButton
           buttonState={state}
