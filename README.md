@@ -2,8 +2,6 @@
 
 Este repositorio contiene ejemplos prácticos del uso de diversas librerías y componentes populares de React. Está diseñado como una referencia para desarrolladores que buscan implementar soluciones rápidas y eficientes utilizando diferentes bibliotecas. Cada ejemplo muestra cómo integrar, personalizar y utilizar componentes en proyectos React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Instalación
 Para ejecutar los ejemplos localmente, clona este repositorio y sigue las instrucciones de instalación en cada carpeta de ejemplo:
 
