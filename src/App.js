@@ -8,7 +8,7 @@ import ReactiveButton3 from './components/reactive-button-examples/reactive-butt
 import ReactiveButton4 from './components/reactive-button-examples/reactive-button-4';
 import ReactiveButton5 from './components/reactive-button-examples/reactive-button-5';
 import ReactiveButton6 from './components/reactive-button-examples/reactive-button-6';
-import SlideEfect1 from './components/slide-efect/slide-efect-1';
+import SlideEffect1 from './components/slide-efect/slide-effect-1';
 
 function App() {
   const [isReactiveButtonOpen, setReactiveButtonOpen] = useState(false);
@@ -67,7 +67,7 @@ function App() {
               El efecto se produce según por el lado que entres en el botón.
             </p>
             <h3>slide-efect-1</h3>
-            <SlideEfect1 role="button">Entra en el bóton por distintos lados</SlideEfect1>
+            <SlideEffect1 role="button">Entra en el bóton por distintos lados</SlideEffect1>
           </div>
         </Collapse>
       </div>

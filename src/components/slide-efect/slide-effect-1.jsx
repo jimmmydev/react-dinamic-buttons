@@ -1,7 +1,7 @@
 import React from "react";
-import "./slide-efect-1.css";
+import "./slide-effect-1.css";
 
-const SlideEfect = ({ as, children, filled, secondary, ...rest }) => {
+const SlideEffect1 = ({ as, children, filled, secondary, ...rest }) => {
   const that = {
     as,
   };
@@ -22,8 +22,8 @@ const SlideEfect = ({ as, children, filled, secondary, ...rest }) => {
   );
 };
 
-SlideEfect.defaultProps = {
+SlideEffect1.defaultProps = {
   as: "button",
 };
 
-export default SlideEfect;
+export default SlideEffect1;
