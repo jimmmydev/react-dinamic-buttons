@@ -8,9 +8,11 @@ import ReactiveButton3 from './components/reactive-button-examples/reactive-butt
 import ReactiveButton4 from './components/reactive-button-examples/reactive-button-4';
 import ReactiveButton5 from './components/reactive-button-examples/reactive-button-5';
 import ReactiveButton6 from './components/reactive-button-examples/reactive-button-6';
+import SlideEfect1 from './components/slide-efect/slide-efect-1';
 
 function App() {
   const [isReactiveButtonOpen, setReactiveButtonOpen] = useState(false);
+  const [isSlideEffectButtonOpen, setSlideEffectButtonOpen] = useState(false);
 
   return (
     <div className="App">
@@ -38,18 +40,34 @@ function App() {
               <pre><code>npm install reactive-button</code></pre>
             </p>
 
-            <h3>Ejemplo 1</h3>
+            <h3>reactive-button-1</h3>
             <ReactiveButton1 />
-            <h3>Ejemplo 2</h3>
+            <h3>reactive-button-2</h3>
             <ReactiveButton2 />
-            <h3>Ejemplo 3</h3>
+            <h3>reactive-button-3</h3>
             <ReactiveButton3 />
-            <h3>Ejemplo 4</h3>
+            <h3>reactive-button-4</h3>
             <ReactiveButton4 />
-            <h3>Ejemplo 5</h3>
+            <h3>reactive-button-5</h3>
             <ReactiveButton5 />
-            <h3>Ejemplo 6</h3>
+            <h3>reactive-button-6</h3>
             <ReactiveButton6 />
+          </div>
+        </Collapse>
+      </div>
+
+      <div className="accordion-section">
+        <h2 onClick={() => setSlideEffectButtonOpen(!isSlideEffectButtonOpen)}>
+          {isSlideEffectButtonOpen ? '▼ ' : '► '} Slide Effect Buttons
+        </h2>
+        <Collapse isOpened={isSlideEffectButtonOpen}>
+          <div className="accordion-content">
+            <p>
+              No requiere de una librería para hacer el efecto, está implementado en HTML y CSS.<br/>
+              El efecto se produce según por el lado que entres en el botón.
+            </p>
+            <h3>slide-efect-1</h3>
+            <SlideEfect1 role="button">Entra en el bóton por distintos lados</SlideEfect1>
           </div>
         </Collapse>
       </div>
