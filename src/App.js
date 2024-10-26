@@ -9,10 +9,12 @@ import ReactiveButton4 from './components/reactive-button-examples/reactive-butt
 import ReactiveButton5 from './components/reactive-button-examples/reactive-button-5';
 import ReactiveButton6 from './components/reactive-button-examples/reactive-button-6';
 import SlideEffect1 from './components/slide-efect/slide-effect-1';
+import InteractiveButton1 from './components/interactive/interactive-button-1';
 
 function App() {
   const [isReactiveButtonOpen, setReactiveButtonOpen] = useState(false);
   const [isSlideEffectButtonOpen, setSlideEffectButtonOpen] = useState(false);
+  const [isInteractiveButtonOpen, setInteractiveButtonOpen] = useState(false);
 
   return (
     <div className="App">
@@ -71,6 +73,32 @@ function App() {
           </div>
         </Collapse>
       </div>
+
+      <div className="accordion-section">
+        <h2 onClick={() => setInteractiveButtonOpen(!isInteractiveButtonOpen)}>
+          {isInteractiveButtonOpen ? '▼ ' : '► '} Interactive buttons
+        </h2>
+        <Collapse isOpened={isInteractiveButtonOpen}>
+          <div className="accordion-content">
+            <h3>Dependencias</h3>
+            <p>
+              Este botón necesita la librería de font-awesome instalada.<br /><br/>
+              <strong>Comando para instalar la librería:</strong>
+              <pre><code>npm i --save @fortawesome/fontawesome-svg-core</code></pre>
+              <pre><code>npm i --save @fortawesome/free-solid-svg-icons</code></pre>
+              <pre><code>npm i --save @fortawesome/free-regular-svg-icons</code></pre>
+              <pre><code>npm i --save @fortawesome/free-brands-svg-icons</code></pre>
+              <pre><code>npm i --save @fortawesome/react-fontawesome@latest</code></pre>
+            </p>
+            <br />
+            <p>
+              El botón hace un efecto cuando haces hover, y cuando haces click cambia a verde conforme ha ido bien.
+            </p>
+            <h3>interactive-1</h3>
+            <InteractiveButton1 />
+          </div>
+        </Collapse>
+      </div>      
     </div>
   );
 }
