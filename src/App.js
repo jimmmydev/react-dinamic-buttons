@@ -10,11 +10,13 @@ import ReactiveButton5 from './components/reactive-button-examples/reactive-butt
 import ReactiveButton6 from './components/reactive-button-examples/reactive-button-6';
 import SlideEffect1 from './components/slide-efect/slide-effect-1';
 import InteractiveButton1 from './components/interactive/interactive-button-1';
+import RainbowButton1 from './components/rainbow/rainbow-button-1';
 
 function App() {
   const [isReactiveButtonOpen, setReactiveButtonOpen] = useState(false);
   const [isSlideEffectButtonOpen, setSlideEffectButtonOpen] = useState(false);
   const [isInteractiveButtonOpen, setInteractiveButtonOpen] = useState(false);
+  const [isRainbowButtonOpen, setRainbowButtonOpen] = useState(false);
 
   return (
     <div className="App">
@@ -98,7 +100,22 @@ function App() {
             <InteractiveButton1 />
           </div>
         </Collapse>
-      </div>      
+      </div>   
+
+      <div className="accordion-section">
+        <h2 onClick={() => setRainbowButtonOpen(!isRainbowButtonOpen)}>
+          {isRainbowButtonOpen ? '▼ ' : '► '} Rainbow buttons
+        </h2>
+        <Collapse isOpened={isRainbowButtonOpen}>
+          <div className="accordion-content">
+            <p>
+              El botón hace el efecto Rainbow cuando haces hover al botón.
+            </p>
+            <h3>rainbow-1</h3>
+            <RainbowButton1 />
+          </div>
+        </Collapse>
+      </div>           
     </div>
   );
 }
